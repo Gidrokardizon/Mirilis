@@ -4,21 +4,43 @@
     <meta charset="UTF-8">
     <link href="lsn.css" rel="stylesheet">
     <link href="directoryH.css" rel="stylesheet">
-    <link href="logo7.ico" rel="shortcut icon" type="image/x-icon">
+     <link rel="shortcut icon" href="logo7.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital@1&display=swap" rel="stylesheet">
     <title>Mirillis</title>
 </head>
+   <!---------Preloader--------------!-->
+<div>
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+    <script>
+  window.onload = function () {
+    document.body.classList.add('loaded');
+  }
+</script>
+ <script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+</div>
 <body>
-
-   <!------------------Header!------------------>
+   <!------------------Logo!------------------>
     <div class="header-logo">
         <a href="lsn.html"><img src="logo7.png" alt="" width="300px"> </a>
     </div>
-    <!------------------Menu!------------------>
+<!------------------Menu!------------------>
     <header>
         <nav class="dws-menu">
             <ul>
-                <li><a href="html/lsn.html"><i class="fa fa-home">    </i>Главная</a></li>
+                <li><a href="lsn.html"><i class="fa fa-home">    </i>Главная</a></li>
                 <li><a href="#">Video<i class="fa fa-shopping-cart"></i></a>
                 <!--<ul>
                     <li><a href="#">R</a>
@@ -48,7 +70,7 @@
             </li>!-->
             <li><a href="#">Directory<i class="fa fa-cogs"></i></a>
                 <ul>
-                    <li><a class=""href="directoryH.html">Html</a></li>
+                    <li><a href="directoryH.html">Html</a></li>
                     <li><a class=""href="#">Css</a></li>
                 </ul>
             </li>
@@ -57,26 +79,105 @@
         </ul>
     </nav>
 </header>
-<!------------------Content!------------------>
-<div class="contentM">
-    <p class="contentM-text">Здравствуйте, мы рады приветствовать Вас на нашем сайте по обучению Html &amp; Css
-     </p>
-    <!--------------------Window--------------!-->
-    <div class="wrapper">
-          <input type="checkbox" id="callback">
-          <label class="btn" for="callback" title="Кликни">New</label>
-          <form action="/" class="popup">
-            <span>Изминения на сайте:</span>
-                        <br/>
-            <p>1.Новое лого и название сайта</p>
-            <p>2.Новое меню</p>
-          <label class="close" for="callback">+</label>
-      </form>
-    </div>
-</div>
+<!-------------Content---------------!-->
+    <!------Image-----!-->
 
-<!------------------Footer----------------!-->
-<footer>
+  <table width="100%" cellspacing="0" cellpadding="5">
+  <firstline>
+  <!--First img!-->
+   <tr>
+    <td width="200" valign="top">
+    <p class="text-book">HTML за 1 час</p>
+     <div class="contentH">
+      <div class="dbl-border">
+          <div class="image-wrapper">
+              <a target="_blank" href="https://www.youtube.com/watch?v=5pBcKKiZSGE">
+              <img src="how.png" width="300px" class="how-html_shadow" title="Кликни">
+              </a>
+          </div>
+      </div>
+     </div>
+    </td>
+ <!--Second img!-->
+    <td width="200" valign="top">
+    <p  class="text-book">Справочник HTML</p>
+     <div class="contentH">
+      <div class="dbl-border">
+          <div class="image-wrapper">
+            <a target="_blank" href="http://htmlbook.ru/html"><img src="book-html.png" width="300px"  height="170px"class="how-html_shadow" title="Кликни"></a>
+          </div>
+      </div>
+  </div>
+   </td>
+   <!--Third img!-->
+    <td width="200" valign="top">
+     <p class="text-book">Справочник HTML</p>
+      <div class="contentH">
+          <div class="dbl-border">
+              <div class="image-wrapper">
+                  <a target="_blank" href="https://htmlbase.ru/">
+                  <img src="base-html.png" width="300px" height="170px" class="how-html_shadow" title="Кликни">
+                  </a>
+              </div>
+          </div>
+      </div>
+    </td>
+ </tr>
+
+  </firstline>
+  <secondline>
+  <table width="100%" cellspacing="0" cellpadding="5">
+   <tr>
+    <td width="200" valign="top">
+     <p class="text-book">Основы HTML</p>
+      <div class="contentH">
+          <div class="dbl-border">
+              <div class="image-wrapper">
+                  <a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/HTML/Element">
+                  <img src="osn-html.png" width="300px" height="170px" class="how-html_shadow" title="Кликни">
+                  </a>
+              </div>
+          </div>
+      </div></td>
+    <td width="200" valign="top">
+    <p class="text-book sec">HTML за 1 час (перезалив)</p>
+      <div class="contentH">
+          <div class="dbl-border">
+              <div class="image-wrapper">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=bWNmJqgri4Q">
+                  <img src="how.png" width="300px" height="170px" class="how-html_shadow" title="Кликни">
+                  </a>
+              </div>
+          </div>
+      </div>
+   </td>
+   <!--Third img!-->
+    <td width="200" valign="top">
+     <p class="text-book">Справочник HTML</p>
+      <div class="contentH">
+          <div class="dbl-border">
+              <div class="image-wrapper">
+                  <a target="_blank" href="https://htmlbase.ru/">
+                  <img src="base-html.png" width="300px" height="170px" class="how-html_shadow" title="Кликни">
+                  </a>
+              </div>
+          </div>
+      </div>
+    </td>
+ </tr>
+  </table>
+    <td width="200" valign="top">Левая колонка</td>
+    </secondline>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+<!------Footer----!-->
+<footer class="dfooter">
       <nav>
            <a href="lsn.html"><i class="fa fa-home">    </i>Главная</a>
            <a href="video.html">Video<i class="fa <fa-shopping-></fa-shopping->cart"></i></a>
@@ -93,63 +194,5 @@
 
     </div>
 </footer>
-<!---------Preloader--------------!-->
-<div class="preloader">
-  <div class="preloader__row">
-    <div class="preloader__item"></div>
-    <div class="preloader__item"></div>
-  </div>
-</div>
-    <script>
-  window.onload = function () {
-    document.body.classList.add('loaded');
-  }
-</script>
- <script>
-  window.onload = function () {
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-      document.body.classList.add('loaded');
-      document.body.classList.remove('loaded_hiding');
-    }, 500);
-  }
-</script>
 
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

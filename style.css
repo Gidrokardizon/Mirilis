@@ -1,225 +1,86 @@
-html{
+* {
     box-sizing: border-box;
 }
-*{
-    box-sizing: inherit;
-}
-body{
- background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalwhite.png");
- font-family: 'Cuprum', sans-serif;
- font-weight: 700;
-}
-.header-logo{
-    margin-top:30px;
-    margin-left: 25px;
-    max-width: 305px;
-}
-/*------Content------*/
-.contentM{
-    margin-top: 140px;
-    text-align: center;
-}
-.contentM-text{
-    font-size:30px;
-}
-/*-----Menu-----*/
-header{
- margin-top: -70px;
- font-family: Cuprum, Arial, Helvetica, sans-serif;
-}
-.dws-menu *{
- margin: 0;
- padding: 0;
-}
-.dws-menu ul,
-.dws-menu ol{
- list-style: none;
-}
-.dws-menu > ul{
- display: flex;
- justify-content: center;
-}
-.dws-menu > ul li{
- position:static;
- border-right: 1px solid #c7c8ca;
-}
-.dws-menu > ul li:first-child{
- border-left: 1px solid #b2b3b5;
-}
-.dws-menu > ul li:last-child{
- border-right: 1px solid #babbbd;
-}
-.dws-menu > ul li > a i.fa{
- position: absolute;
- top: 15px;
- left: 12px;
- font-size: 18px;
-}
-.dws-menu > ul li a{
- display: block;
- /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
- background: rgb(201,201,201); /* Old browsers */
- background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%); /* FF3.6-15 */
- background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
- background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); /* IE6-9 */
- padding: 15px 30px 15px 40px;
- font-size: 14px;
- color: #454547;
- text-decoration: none;
- text-transform:uppercase;
- transition: all 0.3s ease;
-}
-.dws-menu li a:hover{
-     /* Permalink - use to edit and share this gradient:     http://colorzilla.com/gradient-: ;editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100 */
-     background: rgb(224,225,229); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
- background-image: background: -webkit-linear-gradient(rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%);
- background-image: background: -o-linear-gradient(rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%);
- background-image: background: linear-gradient(rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%);
- background: -o-linear-gradient(rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%);
- background: linear-gradient(rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-     filter: progid:DXImageTransform.Microsoft.gradient(     startColorstr='#e0e1e5', endColorstr='#e0e1e5',GradientType=0 );     /* IE6-9 */
-     color: #ffffff;
-     box-shadow: 1px 5px 10px -5px black;
-     transition: all 0.3s ease;
-}
 
-/*sub menu*/
-.dws-menu li ul{
- position: absolute;
- min-width: 150px;
- display: none;
-}
-.dws-menu li > ul li{
- border: 1px solid #c7c8ca;
-}
-.dws-menu li > ul li a{
- padding: 10px;
- text-transform: none;
- background: #e4e4e5;
-}
-.dws-menu li > ul li ul{
- position: absolute;
- right: -150px;
- top: 0;
-}
-.dws-menu li:hover > ul{
- display: block;
-}
-/*-------------Window------------ */
-.wrapper{
-    max-width: 1000px;
-    margin: 40px auto;
-    text-align: center;
+.dbl-border {
     position: relative;
+    display: table;
+    margin-left: 40px;
+    margin-top: 70px;
 }
-.popup{
+
+.dbl-border img {
     display: block;
-    width: 300px;
-    background-color:gray;
-    padding: 30px;
-    text-transform: uppercase;
-    font-family: arial;
-    color: white;
-    font-size: 14px;
-    position:fixed;
-    left: 50%;
-    transform: translate(-50%);
-    top: -999px;
-    transition: .5s all linear;
-    box-shadow: 0 0 10px;
-    border:1px solid #000;
 }
-.popup input{
+
+.dbl-border:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
     width: 100%;
-    border: 0;
-    margin: 10px 0;
-    height: 35px;
-    padding: 5px;
-    outline: block;
+    height: 100%;
+    border: 2px solid #000;
 }
-.submit{
-    background-color: #fff;
-    cursor: pointer;
-}
-#callback{
-    display: none;
-}
-#callback:checked ~ .popup{
-    top: 210px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px #000 /* Параметры тени */
-}
-.close{
-    display: block;
+
+.dbl-border:after {
+    content: "";
     position: absolute;
-    transform: rotate(45deg);
-    font-size: 24px;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
 }
-/*-----Button-----*/
-.btn{
-    border:1px solid red;
-    margin-top: 35px;
-    width: 244px;
-    height: 49px;
-    line-height: 49px;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: helvetica, arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size:18px;
-    color: rgb(206,66,51);
-    letter-spacing: 0.2em;
-    display:block;
-    cursor: pointer;
+
+.dbl-border:before {
+    top: -15px;
+    left: -15px;
 }
-.btn:hover{
-    background: rgb(206,66,51);
-    color:white;
+
+.dbl-border:after {
+    right: -15px;
+    bottom: -15px;
+}
+
+.image-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 2px;
+    background: ;
+    box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.how-html_shadow {
+    /* Цвет фона */
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    /* Параметры тени */
+    padding: 0px;
+    transition: 1s;
+    border-radius: 3%;
+
+
+
+    margin-right: 10px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+.how-html_shadow:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.text-book {
+    margin-top: 1.25cm;
+    margin-bottom: -50px;
+    margin-left: 3cm;
+    font-size: 25px;
 
 }
-.btn::before, .btn::after {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 15px;
-    background: rgb(206,66,51);
-    position: absolute;
-    animation: btn 0.81s infinite alternate ease-in-out;
-}
-.btn::before {
-    top: 0;
-}
-.btn::after {
-    bottom: 0;
-}
-@keyframes btn {
-    0% {
-        left: 0;
-        height: 29px;
-        width: 15px;
-    }
-    50% {
-        height: 8px;
-        width: 39px;
-    }
-    100% {
-        left: 229px;
-        height: 29px;
-        width: 15px;
-    }
-}
+
+
 /*------Footer-------*/
-footer{
-    width: 100%;
-   position: fixed;
+.dfooter{
+    width:100%;
+   position: static;
     background: black;
+
     margin: 0 0;
     text-align: center;
     padding-top: 15px;
@@ -228,13 +89,13 @@ footer{
     height: auto;
     z-index: ;
 }
-footer a{
+.dfooter a{
     color:#fff;
     text-decoration: none;
     font-size: 14px;
     margin-left: 10px;
 }
-footer nav a:hover{
+.dfooter nav a:hover{
     border-bottom: 1px solid white;
 }
 .logo{
@@ -245,65 +106,4 @@ footer nav a:hover{
 }
 .social img{
     border-radius: 40%;
-}
-/*------Preloader-------*/
-.preloader {
-  /*фиксированное позиционирование*/
-  position: fixed;
-  /* координаты положения */
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  /* фоновый цвет элемента */
-  background: #e0e0e0;
-  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-  z-index: 1001;
-}
-.preloader__row {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  margin-left: -35px;
-  text-align: center;
-  animation: preloader-rotate 2s infinite linear;
-}
-.preloader__item {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  background-color: #337ab7;
-  border-radius: 100%;
-  width: 35px;
-  height: 35px;
-  animation: preloader-bounce 2s infinite ease-in-out;
-}
-.preloader__item:last-child {
-  top: auto;
-  bottom: 0;
-  animation-delay: -1s;
-}
-@keyframes preloader-rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes preloader-bounce {
-  0%,
-  100% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
-}
-.loaded_hiding .preloader {
-  transition: 0.3s opacity;
-  opacity: 0;
-}
-.loaded .preloader {
-  display: none;
 }
